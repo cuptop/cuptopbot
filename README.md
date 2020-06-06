@@ -2,6 +2,7 @@
 
 this is a telegram bot notify us about GitHub commits & push
 
+add this into your github-workflow
 ```
 
 name: <workflowname>
