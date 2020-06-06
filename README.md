@@ -1,8 +1,10 @@
-# bot
+# Gitbo
+
+this is a telegram bot notify us about GitHub commits & push
 
 ```
 
-name: <your workflow name>
+name: <workflowname>
 
 on:
   push:
@@ -15,12 +17,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: <name>
-        uses: <user>/<repo name>@master
+      - name: cuptopbot
+        uses: cuptop/cuptopbot@master
         if: always()
         with:
           chat: ${{ secrets.chat }}
           token: ${{ secrets.token }}
           status: ${{ job.status }}
+
           
 ```
