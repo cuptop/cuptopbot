@@ -39,5 +39,5 @@ runs:
   using: "node12"
   main: "dist/index.js"
 branding:
-  icon: 'repeat'  
-  color: 'green'
+  icon: 'send'  
+  color: 'blue'
