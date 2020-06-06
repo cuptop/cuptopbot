@@ -44,7 +44,7 @@ Issue Body : *${ibody}*
                     // Switch statement for Pull Requests
             case "pull_request":
                 return `
-Made a pull request ✅ ✅12
+Made a pull request ✅ ✅12s
 
 PR ${prstate} 
 
