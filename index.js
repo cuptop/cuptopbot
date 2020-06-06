@@ -82,4 +82,4 @@ Tag:        ${process.env.GITHUB_REF}
     // assigning the output to a variable
 const output = evresp(ghevent)
     // sending the message
-bot.sendMessage(chaid, output, { parse_mode: "Markdown" })
+bot.sendMessage(chatid, output, { parse_mode: "Markdown" })
