@@ -44,7 +44,8 @@ Issue Body : *${ibody}*
                     // Switch statement for Pull Requests
             case "pull_request":
                 return `
-🔃🔀🔃🔀🔃🔀
+Made a pull request ✅
+
 PR ${prstate} 
 
 PR Number:      ${pnum}
@@ -55,17 +56,17 @@ PR Body:        *${pbody}*
 
 PR By:          ${ghactor}
 
-[Link to Issue](https://github.com/${repo}/pull/${pnum})
-[Link to Repo ](https://github.com/${repo}/)
-[Build log here](https://github.com/${repo}/commit/${sha}/checks)`
+[Link to Issue 👈](https://github.com/${repo}/pull/${pnum})
+[Link to Repo 👈](https://github.com/${repo}/)
+[Build log here 👈](https://github.com/${repo}/commit/${sha}/checks)`
             default:
                 // switch statement for Pushes
                 return `
-⬆️⇅⬆️⇅
+Made a commit & pushed ✅ 🥳 🎉 🎊
 
 ID: ${ghwrkflw}
 
-Action was a *${ipstatus}!*
+Action was a *${ipstatus}✅*
 
 \`Repository:  ${repo}\` 
 
@@ -75,7 +76,7 @@ By:            *${ghactor}*
 
 Tag:        ${process.env.GITHUB_REF}
 
-[Link to Repo ](https://github.com/${repo}/)
+[Check the repo here 👈](https://github.com/${repo}/)
             `
         }
     }
